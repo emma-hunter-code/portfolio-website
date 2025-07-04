@@ -1,6 +1,6 @@
 :root {
-  --primary-color: black;
-  --secondary-color: rgb(244, 244, 244);
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,8 +73,8 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   box-shadow: var(--box-shadow);
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 4px;
 }
 
