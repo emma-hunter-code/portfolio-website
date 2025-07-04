@@ -98,7 +98,7 @@ p {
 
 .email-link {
   text-decoration: none;
-  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .email-link:hover {
