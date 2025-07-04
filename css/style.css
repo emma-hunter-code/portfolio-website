@@ -1,6 +1,6 @@
 :root {
   --primary-color: black;
-  --secondary-color: white;
+  --secondary-color: rgb(244, 244, 244);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -117,6 +117,10 @@ p {
 
 img {
   box-shadow: var(--box-shadow);
+}
+
+.img-homepage {
+  max-width: 500px;
 }
 
 .about-img-grid {
