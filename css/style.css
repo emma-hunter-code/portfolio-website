@@ -1,0 +1,124 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+/* Formatting for headers */
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.app-name {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Formatting for paragraph text */
+
+p {
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.app-paragraph {
+  text-align: left;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.about-paragraph {
+  display: flex;
+}
+
+/* Formatting for About me and Contact links/buttons */
+
+.navigation-links {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+/* Formatting for launch links/buttons */
+
+.launch-link {
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.launch-link:hover {
+  opacity: 0.7;
+}
+
+/* Formatting for email address and bio links*/
+
+.email-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.bio-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.bio-link:hover {
+  text-decoration: underline;
+}
+/* Formatting for images (all pages) and grid (about page) */
+
+img {
+  box-shadow: var(--box-shadow);
+}
+
+.about-img-grid {
+  margin: 0px 20px;
+}

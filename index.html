@@ -1,0 +1,183 @@
+<!-- 
+Add nav bar - DONE
+Stick nav bar to top - DONE
+Add nav bar to about - DONE
+Fix nav expand button - DONE - removed and re-added the js code
+Add app images - DONE
+Add homepage grid - DONE
+Add images to grid - DONE
+Add app name - DONE
+Add app paragraphs - DONE
+Add app buttons/links - DONE
+Add about me grid - DONE
+Add images to about me grid - DONE
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emma Hunter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- 
+      Including navigation bar on Home page, fixed to top
+    -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">emma.hunter.code</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 
+      Headers including hi, name and location
+    -->
+    <h2>👋 Hi I am</h2>
+    <h1>Emma Hunter</h1>
+    <h3>🇬🇧 Front-end developer, based in the UK</h3>
+    <!-- 
+      Div section containing links (like buttons) to the About me and Contact pages
+    -->
+    <div class="navigation-links">
+      <a href="about.html#contact">Contact me </a>
+      <a href="about.html">About me</a>
+    </div>
+    <!-- 
+      Div section containing grid with projects, descriptions and launch link/buttons
+    -->
+    <div class="container">
+      <div
+        class="row"
+        style="grid-template-columns: 1fr 1fr"
+        class="d-grid gap-3"
+      >
+        <div class="col-md-6 p-3">
+          <img src="/images/ai-cheer-image.png" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 p-3">
+          <h3 class="app-name">Kindness AI Application</h3>
+          <p class="app-paragraph">
+            This application uses the SheCodes AI API to generate kind,
+            supportive messages for moments when they're most needed—an idea
+            born from the very same need! I developed the AI context and crafted
+            the prompt to generate thoughtful sentences based on topics entered
+            by the user. The design of the application is also my own creation.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2437/projects/2570569?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            >Launch Kindness App</a
+          >
+        </div>
+      </div>
+      <div
+        class="row"
+        style="grid-template-columns: 1fr 1fr"
+        class="d-grid gap-3"
+      >
+        <div class="col-md-6 p-3">
+          <img src="/images/weather-app-image.png" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 p-3">
+          <h3 class="app-name">Weather API Application</h3>
+          <p class="app-paragraph">
+            This application used the SheCodes Weather API to call the current
+            weather and forecast for any location-as input by the user. The
+            design of the application is my own creation.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2399/projects/2567385?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            >Launch Weather App</a
+          >
+        </div>
+      </div>
+      <div
+        class="row"
+        style="grid-template-columns: 1fr 1fr"
+        class="d-grid gap-3"
+      >
+        <div class="col-md-6 p-3">
+          <img src="/images/world-clock-image.png" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 p-3">
+          <h3 class="app-name">World Clock API Application</h3>
+          <p class="app-paragraph">
+            This application used the SheCodes World Clock API to call the
+            current time for the user's current, or any location input by the
+            user. The design of the application is my own creation.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2448/projects/2578390?_gl=1*12gef6g*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            >Launch World Clock App</a
+          >
+        </div>
+      </div>
+      <div
+        class="row"
+        style="grid-template-columns: 1fr 1fr"
+        class="d-grid gap-3"
+      >
+        <div class="col-md-6 p-3">
+          <img src="/images/hobby-coll-image.png" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 p-3">
+          <h3 class="app-name">Hobby Collector Website</h3>
+          <p class="app-paragraph">
+            This website displays a range of images. The design of the
+            application is my own creation..
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2365/projects/2532290?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            >Launch Hobby Collector Site</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
