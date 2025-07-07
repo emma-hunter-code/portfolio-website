@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 h3 {
@@ -63,7 +63,7 @@ p {
 .navigation-links {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   justify-content: center;
 }
 
@@ -117,12 +117,77 @@ p {
 .bio-link:hover {
   text-decoration: underline;
 }
+
 /* Formatting for images (all pages) and grid (about page) */
 
 img {
   box-shadow: var(--box-shadow);
+  margin-bottom: 70px;
 }
 
 .about-img-grid {
   margin: 0px 20px;
+}
+
+/* Formatting for signature */
+
+.signature p {
+  font-size: 14px;
+  color: var(--primary-color);
+  opacity: 0.7;
+  padding: 10px;
+  margin-top: 0;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Formatting for small screens */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+  }
+
+  .app-name {
+    margin-bottom: 0px;
+  }
+
+  .img-homepage {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .app-paragraph {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .launch-link {
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+  }
+
+  .about-paragraph p {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .img-about {
+    margin: 0px;
+  }
+
+  .contact-header {
+    margin-top: 20px;
+  }
 }

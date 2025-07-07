@@ -20,17 +20,14 @@ Add SEO
     links titles - DONE
 Separate contact page - DONE
 Update mobile friendly design
-    Add some space beneath launch buttons
+    Add some space beneath launch buttons - DONE
     Reduce header text size
     Reduce sub header
     Reduce paragraph text size?
     Hide contact and about buttons on small screen
 Improve css?
-    Make homepage images smaller
-    Change size of grid columns for smaller images
-    Change background color
-    Remove emojis
-    More space around parapraphs?
+    Make homepage images smaller (Change size of grid columns for smaller images) - DONE
+    More space around parapraphs? DONE
 -->
 
 <!DOCTYPE html>
@@ -79,7 +76,7 @@ Improve css?
               <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link" href="/about.html#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -94,20 +91,21 @@ Improve css?
     <!-- 
       Div section containing links (like buttons) to the About me and Contact pages
     -->
-    <div class="navigation-links">
-      <a href="/contact.html" title="Link to contact details">Contact me </a>
+    <div class="navigation-links d-none d-md-block">
+      <a href="/about.html#contact" title="Link to contact details"
+        >Contact me
+      </a>
       <a href="/about.html" title="Link to my bio">About me</a>
     </div>
     <!-- 
       Div section containing grid with projects, descriptions and launch link/buttons
     -->
     <div class="container">
-      <div
-        class="row"
-        style="grid-template-columns: 1fr 1fr"
-        class="d-grid gap-5"
-      >
-        <div class="col-md-6 p-3 mb-4">
+      <!-- 
+        Kindness app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
           <img
             src="/images/ai-cheer-image.png"
             class="img-fluid rounded img-homepage"
@@ -115,14 +113,14 @@ Improve css?
             alt="kindness app image"
           />
         </div>
-        <div class="col-md-6 p-3">
-          <h3 class="app-name">Kindness AI Application</h3>
+        <div class="col-md-7">
+          <h2 class="app-name">Kindness AI App</h2>
           <p class="app-paragraph">
             This application uses the SheCodes AI API to generate kind,
-            supportive messages for moments when they're most needed—an idea
-            born from the very same need! I developed the AI context and crafted
-            the prompt to generate thoughtful sentences based on topics entered
-            by the user. The design of the application is also my own creation.
+            supportive messages for moments when they're most needed. I
+            developed the AI context and crafted the prompt to generate
+            thoughtful sentences based on topics entered by the user and to
+            diplay the text in the shown format.
           </p>
           <a
             href="https://www.shecodes.io/cohorts/2437/projects/2570569?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
@@ -133,12 +131,11 @@ Improve css?
           >
         </div>
       </div>
-      <div
-        class="row"
-        style="grid-template-columns: 1fr 1fr"
-        class="d-grid gap-5"
-      >
-        <div class="col-md-6 p-3 mb-4">
+      <!-- 
+        Weather app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
           <img
             src="/images/weather-app-image.png"
             class="img-fluid rounded img-homepage"
@@ -146,12 +143,12 @@ Improve css?
             alt="Weather app image"
           />
         </div>
-        <div class="col-md-6 p-3">
-          <h3 class="app-name">Weather API Application</h3>
+        <div class="col-md-7">
+          <h2 class="app-name">Weather API App</h2>
           <p class="app-paragraph">
-            This application used the SheCodes Weather API to call the current
-            weather and forecast for any location-as input by the user. The
-            design of the application is my own creation.
+            This application uses the SheCodes Weather API to call the current
+            weather and a 5-day forecast for any location - as input by the
+            user, including the temperatures and weather related emojis.
           </p>
           <a
             href="https://www.shecodes.io/cohorts/2399/projects/2567385?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
@@ -162,12 +159,11 @@ Improve css?
           >
         </div>
       </div>
-      <div
-        class="row"
-        style="grid-template-columns: 1fr 1fr"
-        class="d-grid gap-5"
-      >
-        <div class="col-md-6 p-3 mb-4">
+      <!-- 
+        World Clock app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
           <img
             src="/images/world-clock-image.png"
             class="img-fluid rounded img-homepage"
@@ -175,12 +171,12 @@ Improve css?
             alt="World clock app image"
           />
         </div>
-        <div class="col-md-6 p-3">
-          <h3 class="app-name">World Clock API Application</h3>
+        <div class="col-md-7">
+          <h2 class="app-name">World Clock API App</h2>
           <p class="app-paragraph">
-            This application used the SheCodes World Clock API to call the
-            current time for the user's current, or any location input by the
-            user. The design of the application is my own creation.
+            This application uses the SheCodes World Clock API to call the
+            current time for the user's current location - or any location input
+            by the user.
           </p>
           <a
             href="https://www.shecodes.io/cohorts/2448/projects/2578390?_gl=1*12gef6g*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
@@ -191,30 +187,24 @@ Improve css?
           >
         </div>
       </div>
-      <div class="row" style="grid-template-columns: 1fr 1fr" class="d-grid">
-        <div class="col-md-6 p-3 mb-4">
-          <img
-            src="/images/hobby-coll-image.png"
-            class="img-fluid rounded img-homepage"
-            title="Image of the hobby collector website"
-            alt="hobby collector website image"
-          />
-        </div>
-        <div class="col-md-6 p-3">
-          <h3 class="app-name">Hobby Collector Website</h3>
-          <p class="app-paragraph">
-            This website displays a range of images. The design of the
-            application is my own creation..
-          </p>
+      <!-- 
+      Footer section with signature
+    -->
+      <footer class="signature">
+        <p>
+          This project was coded by
+          <a href="https://github.com/emma-hunter-code">Emma Hunter</a>. It's
           <a
-            href="https://www.shecodes.io/cohorts/2365/projects/2532290?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
-            class="launch-link"
+            href="https://github.com/emma-hunter-code/portfolio-website"
             target="_blank"
-            title="Link to launch the hobby collector site"
-            >Launch Hobby Collector Site</a
+            >open-source on GitHub</a
           >
-        </div>
-      </div>
+          and
+          <a href="https://whatever-weather.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >.
+        </p>
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
