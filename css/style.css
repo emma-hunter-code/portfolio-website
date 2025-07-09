@@ -7,6 +7,8 @@
 body {
   margin-top: 100px;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Formatting for headers */
@@ -54,8 +56,8 @@ p {
   padding-bottom: 20px;
 }
 
-.about-paragraph {
-  display: flex;
+.about-paragraph p {
+  text-align: left;
 }
 
 /* Formatting for About me and Contact links/buttons */
